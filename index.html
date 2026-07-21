@@ -29,7 +29,82 @@
      </style>
 
 </head>
-<body>
-    
+<body class="min-h-screen bg-base-200 flex items-center justify-center">
+
+    <div class="card bg-base-100 w-full max-w-md shadow-xl rounded-2xl">
+        <div class="card-body px-8 py-8">
+
+            <!-- Logo -->
+            <div class="text-center">
+                <img class="w-16 mx-auto mb-4" src="./assets/github-logo.png" alt="">
+                <h2 class="text-2xl font-bold">GitHub Issues Tracker</h2>
+                <p class="text-sm text-gray-500">
+                    Sign in to manage your issues
+                </p>
+            </div>
+
+            <!-- Username -->
+            <div class="mt-6">
+                <label class="label">
+                    <span class="label-text font-semibold">Username</span>
+                </label>
+
+                <input
+                    id="input-number"
+                    type="text"
+                    placeholder="Enter Username"
+                    class="input input-bordered w-full rounded-xl">
+
+                <p class="text-xs text-purple-600 mt-1">
+                    Default: admin
+                </p>
+            </div>
+
+            <!-- Password -->
+            <div class="mt-4">
+                <label class="label">
+                    <span class="label-text font-semibold">Password</span>
+                </label>
+
+                <input
+                    id="input-password"
+                    type="password"
+                    placeholder="Enter Password"
+                    class="input input-bordered w-full rounded-xl">
+
+                <p class="text-xs text-purple-600 mt-1">
+                    Default: admin123
+                </p>
+            </div>
+
+            <!-- Button -->
+            <button
+                id="signin-btn"
+                class="btn btn-primary w-full rounded-xl mt-6">
+                Sign In
+            </button>
+
+            <!-- OR -->
+            <div class="flex items-center my-6">
+                <div class="flex-1 h-px bg-gray-300"></div>
+                <span class="mx-4 text-sm text-gray-500">OR</span>
+                <div class="flex-1 h-px bg-gray-300"></div>
+            </div>
+
+            <!-- Demo Credentials -->
+            <div>
+                <p class="text-center text-sm text-gray-500 mb-3">
+                    Demo Credentials:
+                </p>
+
+                <div class="bg-base-200 rounded-xl p-5 text-center">
+                    <p><span class="font-semibold">Username:</span> admin</p>
+                    <p><span class="font-semibold">Password:</span> admin123</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </body>
 </html>
